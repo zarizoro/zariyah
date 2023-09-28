@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(to bottom, rgb(1, 1, 46), black);
+    margin: 0;
+    padding: 0;
+    
+}
+.img-fit {
+    object-fit: contain;
+    max-height: 50%; /* Optional: Set a maximum height if needed */
+}
+.col-lg-4 col-md-4 col-12 {
+    width: 200px; /* Adjust the width to your preference */
+    height: 200px; /* Adjust the height to your preference */
+    background-color: #f2f2f2; /* Adjust the background color as needed */
+    border-radius: 20px; /* Adjust the border radius to control the roundness */
+    padding: 20px; /* Optional: Add padding to create space around the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+  }
+
+h1{
+    color: white;
+}
+
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust alignment as needed */
+    padding: 20px; /* Adjust the padding value to your preference */
+}
+  
+.video-with-padding {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width and margin as needed */
+    padding: 20px; /* Add padding around each video */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+.video-with-padding video {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .video-with-padding {
+      flex: 0 0 calc(50% - 20px);
+    }
+}
+  
+@media (max-width: 480px) {
+    .video-with-padding {
+      flex: 0 0 100%;
+    }
+}
+button{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background-color: rgb(240, 31, 66);
+    color: white;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background: ■#ff5100;
+        margin: 20px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 100px;
+        font-family: sans-serif;
+        overflow: hidden;
+        box-shadow: 5px 10px 20px rgba(255, 9, 9, 0.3);
+        transition: all .3s ease-out;
+}
+.icon:hover{
+width: 400px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+color: #fff;
+}
+.icon i{
+    color: #fff;
+}
+
+.te:hover{
+    background: #1A6ED8;
+}
+.tw:hover{
+    background: #1A6ED8;
+}
+.fac:hover{
+    background: #1A6ED8;
+}
+.gi:hover{
+    background: #1A6ED8;
+}
+span{
+    color: #fff;
+}
